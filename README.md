@@ -14,17 +14,6 @@ The goal is to make it useful not only for me, but for anyone starting out with 
 - Evolve this into a **beginner-friendly crash course** with practice questions and exercises.
 
 > *This repo focuses on learning and teaching fundamentals. Advanced, production-grade protocol projects will live in a separate repository later.*
-
----
-
-Here’s a polished, professional-style `README.md` you can drop at the root of **rust-learning-journey**.
-It treats the repo as a self-contained crash course (lessons + practice) without mentioning your protocol-dev goals.
-
----
-
-
-# Rust Learning Journey
-
 A structured, code-driven walkthrough of the Rust programming language.  
 This repository documents a progressive study path—starting from installation and the Rust toolchain, moving through language fundamentals, and culminating in intermediate topics and hands-on exercises.
 
