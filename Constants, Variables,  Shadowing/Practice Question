@@ -1,0 +1,19 @@
+Declare a constant for π and print it.
+
+Show how to declare an immutable variable.
+
+Reassign a mutable variable and display both values.
+
+Demonstrate shadowing by reusing the same name for a new type.
+
+Show shadowing in an inner scope that doesn’t affect the outer scope.
+
+Contrast a constant with an immutable variable.
+
+Explain why constants must have a type annotation.
+
+Create a variable, shadow it as a different type, and print both.
+
+Attempt to mutate an immutable variable and observe the compiler error.
+
+Discuss when you would prefer a constant versus shadowing.
