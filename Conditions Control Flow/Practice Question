@@ -1,0 +1,19 @@
+Use an if statement to check whether a number is positive or negative.
+
+Write an if-else if-else chain for grading scores.
+
+Implement a conditional assignment using if as an expression.
+
+Show how to use a match expression with a boolean.
+
+Use logical AND/OR to check multiple conditions.
+
+Demonstrate an early return from a function using if.
+
+Nest two if statements and print distinct messages.
+
+Build a simple age check that prints “eligible” or “not eligible.”
+
+Refactor an if-else into a match expression.
+
+Explain why conditions must evaluate to a boolean.
