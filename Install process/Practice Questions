@@ -1,0 +1,21 @@
+Install Process / Installation
+
+Explain the steps required to install the Rust toolchain on your system.
+
+Verify your Rust version from the command line.
+
+Initialize a new project with cargo and describe the generated files.
+
+Show how to build and run a Rust program from the terminal.
+
+Demonstrate updating Rust to the latest version.
+
+Set the default toolchain to nightly and revert back to stable.
+
+Compile a single .rs file without using Cargo.
+
+Add a new dependency to Cargo.toml and build.
+
+Explain what cargo check does compared to cargo build.
+
+Describe the purpose of rustup versus cargo
