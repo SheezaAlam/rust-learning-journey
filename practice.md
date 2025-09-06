@@ -1,5 +1,5 @@
 
-## . Practice Questions (Intermediate)
+## Practice Questions (Intermediate)
 
 ### `practice/ownership-borrowing.md`
 
@@ -93,7 +93,6 @@
 
 ## 3. `practice/README.md` Template
 
-```markdown
 # Rust Practice Exercises
 
 This folder contains **intermediate-level** coding questions organized by topic.  
