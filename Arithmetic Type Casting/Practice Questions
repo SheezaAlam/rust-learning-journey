@@ -1,0 +1,19 @@
+Perform all basic arithmetic operations on two integers.
+
+Calculate the remainder of a division.
+
+Cast an i32 to an f64 and print the result.
+
+Compute compound expressions using parentheses for precedence.
+
+Implement an exponentiation using the pow method.
+
+Demonstrate integer division versus floating-point division.
+
+Convert a floating-point value to an integer with truncation.
+
+Show why implicit type conversion is not allowed.
+
+Write a calculator accepting two numbers and an operator from input.
+
+Illustrate overflow behavior in release vs. debug mode.
