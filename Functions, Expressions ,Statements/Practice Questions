@@ -1,0 +1,19 @@
+Define a function that takes no parameters and prints “Hello.”
+
+Write a function that accepts two integers and returns their sum.
+
+Demonstrate an expression without a semicolon versus a statement.
+
+Pass a string slice to a function and print its length.
+
+Create a function with a return type annotation.
+
+Call one function from another and observe scope rules.
+
+Use a function to return a tuple of two values.
+
+Explain the difference between () and returning a value.
+
+Define a function inside another scope (nested).
+
+Illustrate the compiler error for a mismatched return type.
