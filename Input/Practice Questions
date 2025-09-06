@@ -1,0 +1,19 @@
+Write a program that reads a user’s name and prints a greeting.
+
+Prompt for two numbers, add them, and print the sum.
+
+Accept a line of text and report its character count.
+
+Convert string input to an integer safely (handle errors).
+
+Ask for a floating-point number and format it with two decimal places.
+
+Build a CLI menu asking for an option (1–3) and print the selection.
+
+Read multiple space-separated integers and compute their average.
+
+Prompt for a yes/no answer and handle both cases.
+
+Show how to clear the input buffer and read again.
+
+Explain why expect() is commonly used after read_line().
