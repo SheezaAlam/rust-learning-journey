@@ -1,0 +1,19 @@
+Show ownership transfer when passing a String into a function.
+
+Demonstrate borrowing by reference and preserving ownership.
+
+Use &mut to allow a function to modify a string.
+
+Illustrate the rule preventing two mutable references at once.
+
+Return ownership from a function.
+
+Explain what happens when an owner goes out of scope.
+
+Pass an integer (Copy type) to a function and show it’s still valid.
+
+Borrow a vector and print its contents without taking ownership.
+
+Demonstrate dangling reference prevention by the compiler.
+
+Write a function that takes immutable and mutable references separately.
