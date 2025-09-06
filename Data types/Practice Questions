@@ -1,0 +1,19 @@
+Declare variables of every scalar type (integer, float, boolean, char).
+
+Create a tuple and access each element by index.
+
+Use an array to store five integers and print them in reverse.
+
+Demonstrate mutability on an integer variable.
+
+Convert an integer to a floating-point value explicitly.
+
+Show type inference on a literal assignment.
+
+Create and use a usize for indexing.
+
+Explain the difference between signed and unsigned integers.
+
+Define and print a Unicode character.
+
+Explain what happens if an integer overflows in debug mode.
