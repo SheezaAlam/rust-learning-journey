@@ -1,0 +1,19 @@
+Build a small CLI program that echoes input back to the user.
+
+Parse a single command-line argument and display it.
+
+Accept multiple arguments and print them as a list.
+
+Create a simple “add” tool that sums arguments.
+
+Handle missing arguments gracefully.
+
+Add a --help flag that prints usage instructions.
+
+Parse numeric arguments and compute an average.
+
+Use the std::env crate to read environment variables.
+
+Return a nonzero exit code on error.
+
+Wrap your logic in main() and return Result<(), Box<dyn Error>>.
