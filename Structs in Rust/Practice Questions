@@ -1,0 +1,19 @@
+Define a struct User with fields and instantiate it.
+
+Use the struct update syntax to create a second instance.
+
+Implement a method on a struct using impl.
+
+Demonstrate &self versus &mut self in methods.
+
+Create a tuple struct and access its fields by index.
+
+Use a struct to model a rectangle and calculate its area.
+
+Derive Debug and print a struct with {:?}.
+
+Write a function returning a struct instance.
+
+Store structs in a vector and iterate over them.
+
+Explain why structs are useful compared to loose variables.
