@@ -89,6 +89,20 @@
 9. Build a small library crate exposing public functions for arithmetic.
 10. Write an example comparing by-value vs. by-reference parameter passing.
 
+### `practice/Enums.md`
+
+1. Define an enum `Weather` with variants `Sunny`, `Rainy`, and `Cloudy`. Write a `match` to print different activities.
+2. Create an enum `LogLevel` with variants `Info`, `Warning`, `Error(String)`. Write a function to display log messages.
+3. Define an enum `Color` with `Red`, `Green`, `Blue(u8, u8, u8)` and pattern-match to print RGB values.
+4. Build an enum `OrderStatus` with `Placed`, `Shipped`, `Delivered`, `Cancelled(String)`. Add methods `is_active()` and `describe()`.
+5. Write an enum `HttpStatus` (e.g., `Ok(u16)`, `NotFound`, `ServerError(u16)`) and a method that returns a user-friendly message.
+6. Refactor the `PaymentStatus` example: add a method `refund()` that returns a new `PaymentStatus::Failed` with `"Refunded"` reason.
+7. Model a game character’s state: enum `CharacterState` with `Idle`, `Running(u32)`, `Attacking { damage: u32 }`.
+8. Create an enum `Shape` with `Circle(f64)`, `Rectangle(f64, f64)`. Implement a method `area()` returning the shape’s area.
+9. Implement an enum `DatabaseResult` with `Success(String)` and `Error(String)`. Write a `match` that prints either the data or an error.
+10. Write an enum `NetworkResponse` with `Success(Vec<u8>)`, `Timeout`, and `Disconnected`. Add a method `is_success()`.
+
+---
 ---
 
 ## 3. `practice/README.md` Template
