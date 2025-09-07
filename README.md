@@ -124,7 +124,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 | 1     | Fundamentals & Syntax            | ✅          |
 | 2     | Ownership & Memory Safety        | ✅          |
 | 3     | Structs & Modular Code           | ✅          |
-| 4     | Enums, Pattern Matching          | 🚧 Planned |
+| 4     | Enums, Pattern Matching          | ✅ |
 | 5     | Error Handling & Traits          | 🚧 Planned |
 | 6     | Async, Networking, Serialization | 🚧 Planned |
 
