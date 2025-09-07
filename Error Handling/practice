@@ -1,0 +1,21 @@
+Practice Questions
+
+Create a function that tries to read config.toml, returns Result<String, io::Error>, and handle it with match.
+
+Rewrite question 1 using the ? operator to propagate the error.
+
+Use unwrap() to open a known-existing file and observe what happens if you delete it.
+
+Write a CLI tool that prints “File not found” if a file is missing (use if let).
+
+Change return type to Result<(), Box<dyn Error>> and propagate errors using ?.
+
+Add a second file read—handle both errors separately with match.
+
+Experiment with expect() by giving a custom message.
+
+Wrap a custom error in Box<dyn Error> and return it from main.
+
+Combine ? with string parsing: read a file and parse the first line to an integer.
+
+Create your own helper function read_config() that returns either configuration text or an error, then call it in main().
