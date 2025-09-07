@@ -1,12 +1,5 @@
-# Rust Structs — Teaching Repository
-
-This repository is a teaching-oriented collection of examples, explanations, and exercises that demonstrate how to design, implement, and use **structs** in Rust. It is written in a clear, professional style suitable for a GitHub repo used in classrooms or as personal learning material.
-
----
-
 ## Repository Structure
 
-```
 rust-structs-teaching/
 ├── README.md
 ├── Cargo.toml
@@ -27,13 +20,7 @@ rust-structs-teaching/
 ├── tests/
 │   └── struct_tests.rs
 └── CONTRIBUTING.md
-```
 
----
-
-## README.md (overview)
-
-````markdown
 # Rust Structs — Teaching Examples
 
 This repository walks through Rust's `struct` types with progressive examples and exercises:
