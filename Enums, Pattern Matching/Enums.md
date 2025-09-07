@@ -210,7 +210,6 @@ fn main() {
 
 These exercises will help you apply what you learned.
 
----
 
 ## Basic
 1. Define an enum `Weather` with variants `Sunny`, `Rainy`, and `Cloudy`. Write a `match` to print different activities.
