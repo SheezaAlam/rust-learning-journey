@@ -1,1 +1,218 @@
+## 1. Suggested Folder Structure
 
+```
+rust-enums/
+│── src/
+│   └── main.rs        # annotated teaching code
+│
+├── practice/
+│   └── questions.md   # intermediate practice prompts
+│
+└── README.md
+
+
+# Enums in Rust – A Beginner-Friendly Guide
+
+![Rust](https://img.shields.io/badge/Rust-1.70+-black?logo=rust)
+![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey)
+
+## Overview
+This repository introduces **Enums** in Rust – how they work, how to attach **methods** using `impl`, and how to use **pattern matching** to handle each variant.
+
+Enums are essential in Rust for representing **one of several possible states** safely and clearly.
+
+---
+
+## Concepts Covered
+- Defining an **enum** and its **variants**
+- Using **pattern matching** with `match`
+- Attaching **methods & associated functions** using `impl`
+- Returning **data** from enum variants
+- Building a **mini state machine** with enums
+
+---
+
+## Example: Simple Direction Enum
+```rust
+enum Direction {
+    Up,
+    Left,
+    Right,
+    Down,
+}
+
+fn main() {
+    let player_move = Direction::Up;
+
+    match player_move {
+        Direction::Up    => println!("Player goes up"),
+        Direction::Down  => println!("Player goes down"),
+        Direction::Left  => println!("Player goes left"),
+        Direction::Right => println!("Player goes right"),
+    }
+}
+````
+
+---
+
+## Example: Enum With Data + Methods
+
+```rust
+enum PaymentStatus {
+    Pending,
+    Paid(f64),       // stores the amount paid
+    Failed(String),  // stores an error message
+}
+
+impl PaymentStatus {
+    fn new_pending() -> PaymentStatus {
+        PaymentStatus::Pending
+    }
+
+    fn is_complete(&self) -> bool {
+        match self {
+            PaymentStatus::Paid(_) => true,
+            _ => false,
+        }
+    }
+
+    fn describe(&self) -> String {
+        match self {
+            PaymentStatus::Pending => "Payment is pending.".to_string(),
+            PaymentStatus::Paid(amount) => format!("Payment successful: ${:.2}", amount),
+            PaymentStatus::Failed(reason) => format!("Payment failed: {}", reason),
+        }
+    }
+}
+
+fn main() {
+    let status1 = PaymentStatus::new_pending();
+    let status2 = PaymentStatus::Paid(149.99);
+    let status3 = PaymentStatus::Failed("Card declined".to_string());
+
+    println!("{}", status1.describe());
+    println!("Is complete? {}", status1.is_complete());
+
+    println!("{}", status2.describe());
+    println!("Is complete? {}", status2.is_complete());
+
+    println!("{}", status3.describe());
+    println!("Is complete? {}", status3.is_complete());
+}
+```
+
+---
+
+## Why Use Enums?
+
+* Represent **finite states** safely (e.g., success, failure, pending)
+* Store **different data types** per variant
+* Work seamlessly with **pattern matching** to handle each case
+* Foundation for **Result**, **Option**, and most Rust error handling
+
+---
+
+## Practice
+
+See [`practice/questions.md`](practice/questions.md) for intermediate-level exercises to reinforce your understanding.
+
+---
+
+## License
+
+This project is released under the [MIT License](LICENSE).
+
+````
+
+---
+
+## 3. `src/main.rs` (Annotated Teaching Code)
+
+```rust
+// Demonstration of Enums, Pattern Matching, and impl in Rust
+
+// Simple enum without extra data
+enum Direction {
+    Up,
+    Left,
+    Right,
+    Down,
+}
+
+fn movement_example() {
+    let player_move = Direction::Up;
+
+    match player_move {
+        Direction::Up    => println!("Player goes up"),
+        Direction::Down  => println!("Player goes down"),
+        Direction::Left  => println!("Player goes left"),
+        Direction::Right => println!("Player goes right"),
+    }
+}
+
+// Enum with data fields
+enum PaymentStatus {
+    Pending,
+    Paid(f64),       // holds an amount
+    Failed(String),  // holds an error message
+}
+
+// Attaching methods to the enum
+impl PaymentStatus {
+    fn new_pending() -> PaymentStatus {
+        PaymentStatus::Pending
+    }
+
+    fn is_complete(&self) -> bool {
+        match self {
+            PaymentStatus::Paid(_) => true,
+            _ => false,
+        }
+    }
+
+    fn describe(&self) -> String {
+        match self {
+            PaymentStatus::Pending => "Payment is pending.".to_string(),
+            PaymentStatus::Paid(amount) => format!("Payment successful: ${:.2}", amount),
+            PaymentStatus::Failed(reason) => format!("Payment failed: {}", reason),
+        }
+    }
+}
+
+fn payment_example() {
+    let status1 = PaymentStatus::new_pending();
+    let status2 = PaymentStatus::Paid(149.99);
+    let status3 = PaymentStatus::Failed("Card declined".to_string());
+
+    println!("{}", status1.describe());
+    println!("Is complete? {}", status1.is_complete());
+
+    println!("{}", status2.describe());
+    println!("Is complete? {}", status2.is_complete());
+
+    println!("{}", status3.describe());
+    println!("Is complete? {}", status3.is_complete());
+}
+
+fn main() {
+    movement_example();
+    println!("---");
+    payment_example();
+}
+````
+
+---
+
+## 4. `practice/questions.md`
+
+```markdown
+# Enums in Rust – Practice Questions
+
+These exercises will help you apply what you learned.
+
+---
+
+## Basic
+1. Define an enum `Weather` with variants `Sunny`, `Rainy`, and `Cloudy`. Write a `match` to print different activities.
+2. Create an enum `LogLevel` with variants `Info`, `Warning`, `Error(String)`. Write a function to display log messages.
+3. Define an enum `Color` with `Red`, `Green`, `Blue(u8, u8, u8)` and pattern-match to print RGB values.
