@@ -99,3 +99,37 @@ How to run
 List: cargo run -- --list
 
 Show specific: cargo run -- --iface eth0 (use name from --list output)
+
+
+
+o/p:
+     Running `target\debug\first_app.exe --list`
+Name:\Device\NPF_{343A0F0C-3659-4C02-B81A-7A1E8142864B}
+MAC: 74:4c:a1:76:21:02
+IP:0.0.0.0/0
+
+Name:\Device\NPF_{42088AD8-9316-4CE8-A66E-91EB31C3AEDC}
+MAC: 74:4c:a1:76:21:01
+IP:192.168.18.187/24
+
+Name:\Device\NPF_{4F07CA78-6230-4791-9F30-AD5E4C61B005}
+MAC: 00:50:56:c0:00:08
+IP:192.168.52.1/24
+
+Name:\Device\NPF_{A34FC79E-A36C-4497-9BA9-9A66C4767CA3}
+MAC: 00:50:56:c0:00:01
+IP:192.168.75.1/24
+
+Name:\Device\NPF_{5D6791B3-7623-4C17-B8CE-DE97F471C581}
+MAC: 76:4c:a1:76:11:31
+IP:0.0.0.0/0
+
+Name:\Device\NPF_{D14A4BB2-691E-420B-8338-ACD4FC4C7275}
+MAC: 76:4c:a1:76:01:21
+IP:0.0.0.0/0
+
+Name:\Device\NPF_{B005AB59-F42B-45BC-9EF1-B2523F32974C}
+MAC: 08:8f:c3:15:81:27
+IP:0.0.0.0/0
+
+
