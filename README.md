@@ -1,161 +1,129 @@
-
 # Rust Learning Journey – Structured Notes & Code
 
-This repository documents my personal journey of learning the **Rust programming language**, structured step by step with concise explanations, runnable examples, and practice exercises.
+This repository documents my personal journey of learning the Rust programming language, structured step by step with runnable examples, notes, and practice exercises.
 
-It is designed not only as my study log but also as a **beginner-friendly crash course** for anyone starting out with Rust who prefers a **progressive, example-driven approach**.
-
----
-
-##  Purpose
-
-* Build a strong foundation in Rust for future **protocol-level development** and **systems programming**.
-* Provide **concise explanations** of major concepts alongside runnable code.
-* Evolve this into a **self-contained reference** for Rust learners.
-* Reinforce learning through **progressively harder practice questions**.
-
-This repository is for fundamentals. Advanced protocol development projects will be maintained separately.
+It serves both as a personal study log and as a beginner-friendly guide for anyone starting Rust with a progressive, example-driven approach.
 
 ---
 
-##  Repository Structure
+## Purpose
+
+- Build a strong foundation in Rust for protocol-level and systems programming.  
+- Provide concise explanations of concepts alongside runnable `.rs` code.  
+- Reinforce learning with progressively harder practice questions.  
+- Maintain a structured reference for long-term Rust development.  
+
+---
+
+## Repository Structure
 
 ```
+
 rust-learning-journey/
 │
-├─ topics/             # Notes & runnable code examples for each concept
-│   ├─ installation-process/
-│   ├─ data-types/
-│   ├─ arithmetic-type-casting/
-│   ├─ constants-variables-shadowing/
-│   ├─ functions-expressions-statements/
-│   ├─ conditions-control-flow/
-│   ├─ ownership-borrowing/
-│   ├─ structs/
-│   ├─ input/
-│   └─ tools/
-│
-├─ practice/           # Practice exercises per topic
-│   ├─ ownership-borrowing.md
-│   ├─ structs.md
-│   ├─ constants-variables-shadowing.md
-│   ├─ control-flow.md
-│   ├─ arithmetic-type-casting.md
-│   ├─ functions.md
-│   └─ …
-│
+├─ Arithmetic.Type Casting.md
+├─ CLI Clap/
+│   └─ config.rs
+├─ Conditions .Control Flow\.md
+├─ Constant,.Variables .Shadowing.md
+├─ Data.Types.md
+├─ Enums.md
+├─ Error Handling/
+│   └─ anyhow\.rs
+├─ Functions, Expressions .Statements.md
+├─ Console Input.md
+├─ Installation\_Process.md
+├─ Key Derivations/
+│   └─ Aes256GCM.rs
+├─ NetworkInterface/
+│   └─ capture-parse-decode.rs
+├─ Ownership & Borrowing.md
+├─ Practice/
+│   └─ practice.md
+├─ Structs.md
+├─ CLI Tools.md
+├─ tokio.rs
+├─ Tracing/rust-tracing/
+│   └─ README.md
 └─ README.md
-```
+
+````
 
 ---
 
-##  Goals
+## Topics Covered
 
-* Develop a **clear mental model** of ownership, borrowing, and lifetimes.
-* Gain fluency with **variables, shadowing, constants, and data types**.
-* Practice **real-world coding patterns**: control flow, error handling, and struct design.
-* Build a **reusable Rust reference** for future projects.
-* Transition from **basic syntax** → **modular code** → **networking and async systems**.
-
----
-
-##  Topics Covered
-
-* Installation & Tooling (`cargo`, `rustup`)
-* Data Types & Type Safety
-* Arithmetic & Type Casting
-* Constants, Variables & Shadowing
-* Functions, Expressions & Statements
-* Console Input & Output
-* Conditions & Control Flow
-* Ownership, Borrowing & Lifetimes
-* Structs & Methods
-* CLI Tools & Utility Patterns
-* Enums & Pattern Matching
-* Error Handling (with `anyhow`)
-* Traits & Abstraction (planned)
-* Async & Networking (planned)
+- Arithmetic & Type Casting  
+- CLI with Clap  
+- Conditions & Control Flow  
+- Constants, Variables & Shadowing  
+- Data Types  
+- Enums & Pattern Matching  
+- Error Handling (anyhow)  
+- Functions, Expressions & Statements  
+- Console Input  
+- Installation Process  
+- Key Derivations (AES-256-GCM)  
+- Network Interfaces (capture → parse → decode)  
+- Ownership & Borrowing  
+- Practice Notes  
+- Structs in Rust  
+- CLI Tools  
+- Async with Tokio  
+- Tracing (rust-tracing)  
 
 ---
 
-## How to Use
+## Goals
 
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/SheezaAlam/rust-learning-journey.git
-cd rust-learning-journey
-```
-
-2. **Explore Topics**
-
-   * Each folder in `topics/` contains:
-
-     * `code.rs` → runnable example
-     * `NOTES.md` → theory & explanations
-
-3. **Practice Exercises**
-
-   * Located under `practice/`
-   * Open the corresponding `.md` file for problems
-   * Solve in a `.rs` file or directly on **Rust Playground**
-
-4. **Iterate & Commit**
-
-   * Treat this repo as a **working notebook**.
-   * Commit solutions, experiments, and insights as you progress.
-
----
-
-##  Prerequisites
-
-* Rust stable toolchain (`rustup`, `cargo`)
-* Basic command-line familiarity
-* Text editor or IDE with Rust support
-
-  * Recommended: **VS Code + rust-analyzer**
-
-Install Rust quickly:
-
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+- Develop a clear mental model of ownership, borrowing, and lifetimes.  
+- Gain fluency with Rust syntax and type safety.  
+- Explore real-world coding patterns (error handling, CLI, async, tracing).  
+- Build reusable references for future protocol development.
+- ## How to Use
+- 1. Clone the repository  
+   git clone https://github.com/SheezaAlam/rust-learning-journey.git
+   cd rust-learning-journey
 
 
-##  Roadmap
+2. Explore any topic file or folder:
 
-| Phase | Focus Area                       | Status         |
-| ----- | -------------------------------- | -------------- |
-| 1     | Fundamentals & Syntax            | ✅ Completed    |
-| 2     | Ownership & Memory Safety        | ✅ Completed    |
-| 3     | Structs & Modular Code           | ✅ Completed    |
-| 4     | Enums & Pattern Matching         | ✅ Completed    |
-| 5     | Error Handling & Traits          | 🚧 In Progress |
-| 6     | Async, Networking, Serialization | 🚧 Planned     |
+   * `.md` → explanations and notes
+   * `.rs` → runnable Rust code examples
 
----
+3. Try practice exercises under `practice/`.
 
-##  Resources
+## Roadmap
+
+| Phase | Focus Area                        | Status      |
+| ----- | --------------------------------- | ----------- |
+| 1     | Fundamentals & Syntax             | Completed   |
+| 2     | Ownership & Borrowing             | Completed   |
+| 3     | Structs & Control Flow            | Completed   |
+| 4     | Enums & Pattern Matching          | Completed   |
+| 5     | Error Handling                    | Completed   |
+| 6     | Tracing                           | Completed   |
+| 7     | Async (Tokio), Networking         | In Progress |
+| 8     | Protocol-level Development (Next) | Upcoming    |
+
+
+## Resources
 
 * [The Rust Programming Language (Book)](https://doc.rust-lang.org/book/)
-* [Rustlings Exercises](https://github.com/rust-lang/rustlings)
-* [Rust Playground](https://play.rust-lang.org/)
-* [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/)
+* [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
+* [Rustlings](https://github.com/rust-lang/rustlings)
+* [Tokio](https://tokio.rs)
+* [Rust Playground](https://play.rust-lang.org)
 
 ---
 
-##  License
+## License
 
-This project is open source under the **MIT License**.
-
----
-
-##  Contributing
-
-This is primarily a **personal study log**, but suggestions, clarifications, and improvements are welcome via pull requests.
+This project is open source under the MIT License.
 
 ---
 
-### Final Note
+## Contributing
 
-> *“Mastery is built through deliberate, consistent practice.”*
-> This repository is my commitment to transforming curiosity into competence—one Rust program at a time.
+This is a personal study log. Suggestions, improvements, and clarifications are welcome via pull requests.
 
